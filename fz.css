@@ -1,0 +1,85 @@
+:root {
+  --primary: #246bfd;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  padding: 1rem;
+}
+
+#app {
+  position: relative;
+}
+
+.ele-search {
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1.25rem;
+}
+
+input {
+  font-family: "Inter", sans-serif;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 2px rgba(36, 107, 236, 0);
+}
+
+input:focus {
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  box-shadow: 0 0 2px 2px rgba(36, 107, 236, 0.5);
+  outline: none;
+}
+
+.entries > div {
+  font-weight: 300;
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.entries div > * {
+  pointer-events: none;
+}
+
+.entries div span {
+  font-weight: 600;
+}
+
+.txt-panel:empty {
+  display: none;
+}
+
+.txt-panel {
+  position: absolute;
+  top: 60px;
+  right: calc(2rem - 0%);
+  max-width: 400px;
+  width: 60%;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+.txt-panel h4 {
+  margin-bottom: 1rem;
+}
+
+.txt-panel p {
+  line-height: 1.4;
+}
